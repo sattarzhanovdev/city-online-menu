@@ -1,0 +1,19 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background: #373D46;
+  .left{
+    display: flex;
+    li{
+      list-style: none;
+      padding: 20px 25px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .active{
+      background: #262B33;
+    }
+  }
+}

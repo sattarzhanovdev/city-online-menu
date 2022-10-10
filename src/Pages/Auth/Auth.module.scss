@@ -1,0 +1,93 @@
+.auth{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img{
+    width: 150px;
+  }
+  .dots{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0; 
+    margin-left: 15px;
+    div{
+      width: 20px;
+      height: 20px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      margin-right: 15px;
+      transition: .2s;
+    }
+    .active{
+      background: gray;
+      transition: .2s;
+    }
+  }
+  .password_btns{
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    button{
+      width: 100px;
+      height: 100px;
+      background: white;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      border: 0;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .delete{
+      font-size: 20px;
+    }
+  }
+}
+
+.auth_animation{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: wiggle 2.5s 1;
+  img{
+    width: 150px;
+  }
+  .dots{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0; 
+    margin-left: 15px;
+  }
+  .password_btns{
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    button{
+      width: 100px;
+      height: 100px;
+      background: white;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      border: 0;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .delete{
+      font-size: 20px;
+    }
+  }
+}
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); }
+  85% { transform: rotate(5deg); }
+  95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
